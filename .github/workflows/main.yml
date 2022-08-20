@@ -10,3 +10,12 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v4.2.0
+      - name: Audit 
+        uses: jakejarvis/lighthouse-action@master
+        with:
+         url: 'https://jarv.is/'
+      - name: Upload results as an artifact
+        uses: actions/upload-artifact@master
+        with:
+         name: report
+         path: './report'
