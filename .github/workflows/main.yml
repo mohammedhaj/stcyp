@@ -23,6 +23,21 @@ jobs:
         run: |
           npm install -g @lhci/cli@0.6.x
           lhci autorun --upload.target=temporary-public-storage 
+          
+      - name: Lighthouse Report
+        uses: manrueda/lighthouse-report-action@v1.1.2             
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+             PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }
+             PUBLISH_BRANCH: gh-pages
+             PUBLISH_DIR: '.lighthouseci'
+      # - name: Upload results as an artifact
+      #   uses: actions/upload-artifact@master
+      #   with:
+      #    name: report
+      #    path: './report'
        
 
 
