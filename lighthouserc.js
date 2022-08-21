@@ -3,7 +3,7 @@ module.exports = {
       // Static site example
 collect: {
     numberOfRuns: 1,
-    staticDistDir: "./cypress/e2e/step_definitions/spec.js",
+    staticDistDir: "./cypress/e2e",
     // url: ['https://jpetstore.tricentis.com/jpetstore/actions/Catalog.action']
   },
   upload: {
