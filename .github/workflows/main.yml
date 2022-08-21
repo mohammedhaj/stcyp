@@ -10,11 +10,11 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v4.2.0
-      - name: Lighthouse Report
-        uses: manrueda/lighthouse-report-action@v1.1.2
-        with:
-           reports: '.lighthouseci'
-           github-token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Lighthouse Report
+      #   uses: manrueda/lighthouse-report-action@v1.1.2
+      #   with:
+      #      reports: '.lighthouseci'
+      #      github-token: ${{ secrets.GITHUB_TOKEN }}
 
       
       # - name: Upload results as an artifact
