@@ -3,7 +3,7 @@ module.exports = {
       // Static site example
 collect: {
     numberOfRuns: 1,
-    staticDistDir: "./public --url=http://localhost/checkout.html"
+    staticDistDir: "./public --url:['https://jpetstore.tricentis.com/jpetstore/actions/Catalog.action']"
     //staticDistDir: "./cypress/e2e",
     
    // url: ['https://jpetstore.tricentis.com/jpetstore/actions/Catalog.action']
