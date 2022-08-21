@@ -3,8 +3,8 @@ module.exports = {
       // Static site example
 collect: {
     numberOfRuns: 1,
-    staticDistDir: './cypress/e2e',
-     url: ['https://jpetstore.tricentis.com/jpetstore/actions/Catalog.action']
+    staticDistDir: "./dist/hajjij-task-2",
+    // url: ['https://jpetstore.tricentis.com/jpetstore/actions/Catalog.action']
   },
   upload: {
     target: 'temporary-public-storage',
